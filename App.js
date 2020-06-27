@@ -2,8 +2,8 @@ import React, {Component} from 'react';
 import {Button, StyleSheet, Text, View} from 'react-native';
 
 const defaultState = {
-    min: 0,
-    sec: 10,
+    min: 25,
+    sec: 0,
     onCount: true, //true = currently counting, false = paused counting
     onWork: true, //true = on work timer, false = on break timer
 };
@@ -46,12 +46,12 @@ class Timer extends Component {
                 sec: 59,
                 min: prevState.min - 1,
             } : prevState.onWork ? { //change to break timer
-                sec: 5,
-                min: 0,
+                sec: 0,
+                min: 5,
                 onWork: false,
             } : { //change to work timer
-                sec: 10,
-                min: 0,
+                sec: 0,
+                min: 25,
                 onWork: true,
             }
         ))
