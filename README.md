@@ -4,7 +4,7 @@ This implementation of the Pomodoro Timer switches between 25 and 5 minutes. A t
 ## Motivation
 Learning the basics of React Native
 ## Future revisions
-* Decompose code into smaller subcomponents
+* Refactor code
 * Improve aesthetics
 * Phone should vibrate after each interval
 * Allow for user input of work/break interval time length
